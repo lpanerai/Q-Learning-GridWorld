@@ -1,4 +1,5 @@
 # utility.py
+max_simulation_steps = 100
 
 def run_simulation(agent, env):
     stato_corrente = env.reset()
@@ -11,4 +12,4 @@ def run_simulation(agent, env):
         percorso.append(stato_successivo)
         reward_list.append(reward)
         stato_corrente = stato_successivo
-    return percorso,reward_list
+    return percorso[:max_simulation_steps],reward_list[:max_simulation_steps]

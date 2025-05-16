@@ -5,7 +5,7 @@ from QlearningAgent import QLearningAgent
 from pygame_visualizer import PygameGridWorld
 from utility import run_simulation
 
-env = GridWorldEnv(width=10, height=10, start=(0, 0), goal=(5, 7), obstacles=[(1, 2),(3, 3),(3,7),(5, 3),(6, 6)])
+env = GridWorldEnv(width=10, height=10, start=(9, 9), goal=(0, 0), obstacles=[(1, 2),(3, 3),(3,7),(5, 3),(6, 6)])
 agent = QLearningAgent(env, alpha=0.1, gamma=0.99, epsilon=0.25)
 
 episodes = 1000
