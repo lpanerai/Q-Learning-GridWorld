@@ -60,20 +60,19 @@ pip install -r requirements.txt
 
 ### 3. utility.py
 
-* `visualize_gridworld(env, path, episode=None)`: Draws the grid and agent’s path using Matplotlib.
 * `run_simulation(agent, env)`: Simulates a full episode following the current policy.
 
 ### 4. main.py
 
 * Runs the training loop for a specified number of episodes, updating the Q-table.
-* Every `visualize_every` episodes, it prints progress and displays the current path with Matplotlib.
+* Every `visualize_every` episodes, it prints progress and displays the current path with pygame.
 * After training, runs a test episode with `epsilon=0.0` and visualizes the final path.
 
 ### 5. pygame\_visualizer.py
 
 * **`PygameGridWorld`**: Renders the environment and agent’s movement step-by-step using Pygame.
 
-  * `render_episode(path, episode)`: Animates the path and updates the window title with the episode and step count.
+  * `render_episode(path, episode, reward)`: Animates the path and updates the window title with the episode and step count and reward gained.
 * Mirrors `main.py` logic but visualizes in a Pygame window.
 
 ## Customization
