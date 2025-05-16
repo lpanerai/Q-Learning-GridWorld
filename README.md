@@ -22,13 +22,11 @@ project/
 Install the following Python libraries:
 
 * `pygame` (for real-time rendering)
-* `matplotlib` (for static plots)
 
 Example `requirements.txt`:
 
 ```
 pygame>=2.0
-matplotlib>=3.0
 ```
 
 Install via:
@@ -77,24 +75,6 @@ pip install -r requirements.txt
 
   * `render_episode(path, episode)`: Animates the path and updates the window title with the episode and step count.
 * Mirrors `main.py` logic but visualizes in a Pygame window.
-
-## Usage Examples
-
-### Training and Static Visualization
-
-```bash
-python main.py
-```
-
-* Outputs console logs and Matplotlib figures showing agent trajectories.
-
-### Training and Real-Time Animation
-
-```bash
-python pygame_visualizer.py
-```
-
-* Opens a Pygame window displaying the agent moving through the grid.
 
 ## Customization
 
