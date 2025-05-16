@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project implements a Q-learning agent that learns to navigate a 2D GridWorld environment to reach a goal while avoiding obstacles. It provides both static visualizations using Matplotlib (`utility.py`) and real-time animations with Pygame (`pygame_visualizer.py`) to display the agent’s trajectory during training and testing.
+This project implements a Q-learning agent that learns to navigate a 2D GridWorld environment to reach a goal while avoiding obstacles. It provides a real-time animations with Pygame (`pygame_visualizer.py`) to display the agent’s trajectory during training and testing.
 
 ## Directory Structure
 
