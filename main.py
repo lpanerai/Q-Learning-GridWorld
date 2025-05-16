@@ -3,9 +3,13 @@
 from GridWorld import GridWorldEnv
 from QlearningAgent import QLearningAgent
 from pygame_visualizer import PygameGridWorld
-from utility import run_simulation
+from utility import run_simulation, generate_maze
 
-env = GridWorldEnv(width=10, height=10, start=(9, 9), goal=(0, 0), obstacles=[(1, 2),(3, 3),(3,7),(5, 3),(6, 6)])
+#MAZE DIMENSION
+MAZE_DIM=13
+maze=generate_maze(MAZE_DIM)
+
+env = GridWorldEnv(width=MAZE_DIM, height=MAZE_DIM, start=(0, 0), goal=(MAZE_DIM-1, MAZE_DIM-1), obstacles=maze)
 agent = QLearningAgent(env, alpha=0.1, gamma=0.99, epsilon=0.25)
 
 episodes = 1000

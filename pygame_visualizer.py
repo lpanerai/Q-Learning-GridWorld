@@ -11,8 +11,8 @@ from QlearningAgent import QLearningAgent
 from utility import run_simulation
 
 class PygameGridWorld:
-    CELL_SIZE = 80
-    MARGIN = 2
+    CELL_SIZE = 20
+    MARGIN = 1
     FPS = 5
 
     def __init__(self, env):
